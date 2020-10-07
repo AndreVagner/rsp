@@ -32,17 +32,17 @@ def kamen():
         session['vr_no'] = 0
 
 
-    hrac = "Kámen"
-    pocitac = choice(["Kámen", "Nůžky", "Papír"])
-    if pocitac == "Papír":
+    hrac = "/static/img/kamen.png"
+    pocitac = choice(["/static/img/kamen.png", "/static/img/nuzky.png", "/static/img/papir.jpg"])
+    if pocitac == "/static/img/papir.jpg":
         vysledek = Prohra
         barva = cervena
         session['vr_pc'] = session['vr_pc']+1
-    if pocitac == "Nůžky":
+    if pocitac == "/static/img/nuzky.png":
         vysledek = Vyhra
         barva = zelena
         session['vr_hr'] = session['vr_hr']+1
-    if pocitac == "Kámen":
+    if pocitac == "/static/img/kamen.png":
         vysledek = Remiza
         barva = nic
         session['vr_no'] = session['vr_no']+1
@@ -70,17 +70,17 @@ def nuzky():
         session['vr_pc'] = 0
 
 
-    hrac = "Nůžky"
-    pocitac = choice(["Kámen", "Nůžky", "Papír"])
-    if pocitac == "Papír":
+    hrac = "/static/img/nuzky.png"
+    pocitac = choice(["/static/img/kamen.png", "/static/img/nuzky.png", "/static/img/papir.jpg"])
+    if pocitac == "/static/img/papir.jpg":
         vysledek = Vyhra
         barva = zelena
         session['vr_hr'] = session['vr_hr']+1
-    if pocitac == "Nůžky":
+    if pocitac == "/static/img/nuzky.png":
         vysledek = Remiza
         barva = nic
         session['vr_no'] = session['vr_no']+1
-    if pocitac == "Kámen":
+    if pocitac == "/static/img/kamen.png":
         vysledek = Prohra
         barva = cervena
         session['vr_pc'] = session['vr_pc']+1
@@ -106,17 +106,17 @@ def papir():
         session['vr_pc'] = 0
 
 
-    hrac = "Papír"
-    pocitac = choice(["Kámen", "Nůžky", "Papír"])
-    if pocitac == "Papír":
+    hrac = "/static/img/papir.jpg"
+    pocitac = choice(["/static/img/kamen.png", "/static/img/nuzky.png", "/static/img/papir.jpg"])
+    if pocitac == "/static/img/papir.jpg":
         vysledek = Remiza
         barva = nic
         session['vr_no'] = session['vr_no']+1
-    if pocitac == "Nůžky":
+    if pocitac == "/static/img/nuzky.png":
         vysledek = Prohra
         barva = cervena
         session['vr_pc'] = session['vr_pc']+1
-    if pocitac == "Kámen":
+    if pocitac == "/static/img/kamen.png":
         vysledek = Vyhra
         barva = zelena
         session['vr_hr'] = session['vr_hr']+1
